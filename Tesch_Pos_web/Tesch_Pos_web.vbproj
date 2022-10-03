@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{B6447772-C27C-4028-9AB0-C1A51012B150}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Tesch_Pos_web</RootNamespace>
+    <AssemblyName>Tesch_Pos_web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44373</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Tesch_Pos_web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Tesch_Pos_web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.Design">
+      <HintPath>..\lib\RCAJAX\2021.1.330.45\Telerik.Web.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\lib\RCAJAX\2021.1.330.45\Telerik.Web.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\lib\RCAJAX\2021.1.330.45\Telerik.Web.UI.Skins.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BlueBackGround.jpg" />
+    <Content Include="Button_Icon_Green.svg.png" />
+    <Content Include="Config.xml" />
+    <Content Include="Cortes.aspx" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap-social.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\css\addons\datatables-select.min.css" />
+    <Content Include="css\css\addons\datatables-select2.min.css" />
+    <Content Include="css\css\addons\datatables.min.css" />
+    <Content Include="css\css\addons\datatables2.min.css" />
+    <Content Include="css\css\addons\directives.min.css" />
+    <Content Include="css\css\addons\flag.min.css" />
+    <Content Include="css\css\addons\jquery.zmd.hierarchical-display.min.css" />
+    <Content Include="css\css\addons\rating.min.css" />
+    <Content Include="css\css\bootstrap.css" />
+    <Content Include="css\css\bootstrap.min.css" />
+    <Content Include="css\css\mdb.css" />
+    <Content Include="css\css\mdb.lite.css" />
+    <Content Include="css\css\mdb.lite.min.css" />
+    <Content Include="css\css\mdb.min.css" />
+    <Content Include="css\css\modules\animations-extended.min.css" />
+    <Content Include="css\css\style.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\layout-rtl.css" />
+    <Content Include="css\layout-rtl.min.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\layout.min.css" />
+    <Content Include="css\main.css" />
+    <Content Include="Index.html" />
+    <Content Include="js\bootbox.js" />
+    <Content Include="js\bootbox.min.js" />
+    <Content Include="js\bootstrap.css" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.css" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\components\masonry.js" />
+    <Content Include="js\components\masonry.min.js" />
+    <Content Include="js\components\swiper.js" />
+    <Content Include="js\components\swiper.min.js" />
+    <Content Include="js\components\wow.js" />
+    <Content Include="js\components\wow.min.js" />
+    <Content Include="js\demos.js" />
+    <Content Include="js\example.js" />
+    <Content Include="js\index.js" />
+    <Content Include="js\layout.js" />
+    <Content Include="js\layout.min.js" />
+    <Content Include="js\mdb.css" />
+    <Content Include="js\mdb.js" />
+    <Content Include="js\mdb.lite.css" />
+    <Content Include="js\mdb.lite.min.css" />
+    <Content Include="js\mdb.min.css" />
+    <Content Include="js\mdb.min.js" />
+    <Content Include="js\scroll-fix.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Menu.aspx" />
+    <Content Include="POS.aspx" />
+    <Content Include="premium.png" />
+    <Content Include="Principal.aspx" />
+    <Content Include="Ordenes.aspx" />
+    <Content Include="sl_120320_38530_13.jpg" />
+    <Content Include="xml_ico.png" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Logo Tesch.png" />
+    <Content Include="logo.png" />
+    <Content Include="pdf_ico.png" />
+    <Content Include="red-button-icon.png" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="upload.png" />
+    <Content Include="Vendor\bootbox.js" />
+    <Content Include="Vendor\bootbox.min.js" />
+    <Content Include="Vendor\bootstrap-3.0.0.min.js" />
+    <Content Include="Vendor\bootstrap-3.1.1.min.js" />
+    <Content Include="Vendor\bootstrap-3.3.2.min.js" />
+    <Content Include="Vendor\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Vendor\bootstrap\js\npm.js" />
+    <Content Include="Vendor\css\google.prettify.min.css" />
+    <Content Include="Vendor\css\main.css" />
+    <Content Include="Vendor\demos.js" />
+    <Content Include="Vendor\example.js" />
+    <Content Include="Vendor\jquery-1.10.2.min.js" />
+    <Content Include="Vendor\jquery-1.11.2.min.js" />
+    <Content Include="Vendor\jquery-1.8.3.min.js" />
+    <Content Include="Vendor\jquery-migrate.min.js" />
+    <Content Include="Vendor\jquery.back-to-top.js" />
+    <Content Include="Vendor\jquery.easing.js" />
+    <Content Include="Vendor\jquery.min.js" />
+    <Content Include="Vendor\jquery.scrollUp.min.js" />
+    <Content Include="Vendor\jquery.smooth-scroll.js" />
+    <Content Include="Vendor\jquery.wow.min.js" />
+    <Content Include="Vendor\js\bootbox.js" />
+    <Content Include="Vendor\js\bootbox.min.js" />
+    <Content Include="Vendor\js\bootstrap-3.0.0.min.js" />
+    <Content Include="Vendor\js\bootstrap-3.1.1.min.js" />
+    <Content Include="Vendor\js\bootstrap-3.3.2.min.js" />
+    <Content Include="Vendor\js\demos.js" />
+    <Content Include="Vendor\js\example.js" />
+    <Content Include="Vendor\js\jquery-1.10.2.min.js" />
+    <Content Include="Vendor\js\jquery-1.11.2.min.js" />
+    <Content Include="Vendor\js\jquery-1.8.3.min.js" />
+    <Content Include="Vendor\js\jquery.min.js" />
+    <Content Include="Vendor\js\jquery.scrollUp.min.js" />
+    <Content Include="Vendor\js\prettify.min.js" />
+    <Content Include="Vendor\masonry\imagesloaded.pkgd.min.js" />
+    <Content Include="Vendor\masonry\jquery.masonry.pkgd.min.js" />
+    <Content Include="Vendor\prettify.min.js" />
+    <Content Include="Vendor\scroll-fix.js" />
+    <Content Include="Vendor\simple-line-icons\fonts\Simple-Line-Icons.dev.svg" />
+    <Content Include="Vendor\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="Vendor\simple-line-icons\icons-lte-ie7.js" />
+    <Content Include="Vendor\simple-line-icons\License.txt" />
+    <Content Include="Vendor\simple-line-icons\Readme.txt" />
+    <Content Include="Vendor\simple-line-icons\simple-line-icons.css" />
+    <Content Include="Vendor\simple-line-icons\simple-line-icons.min.css" />
+    <Content Include="Vendor\swiper\css\swiper.css" />
+    <Content Include="Vendor\swiper\css\swiper.min.css" />
+    <Content Include="Vendor\swiper\js\swiper.jquery.js" />
+    <Content Include="Vendor\swiper\js\swiper.jquery.min.js" />
+    <Content Include="Vendor\swiper\js\swiper.js" />
+    <Content Include="Vendor\swiper\js\swiper.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cortes.aspx.designer.vb">
+      <DependentUpon>Cortes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cortes.aspx.vb">
+      <DependentUpon>Cortes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.vb">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.vb">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Global_asax.vb" />
+    <Compile Include="POS.aspx.designer.vb">
+      <DependentUpon>POS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POS.aspx.vb">
+      <DependentUpon>POS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.aspx.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ordenes.aspx.designer.vb">
+      <DependentUpon>Ordenes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ordenes.aspx.vb">
+      <DependentUpon>Ordenes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\css\addons\datatables-select.min.css.map" />
+    <Content Include="css\css\addons\datatables-select2.min.css.map" />
+    <Content Include="css\css\addons\datatables.min.css.map" />
+    <Content Include="css\css\addons\datatables2.min.css.map" />
+    <Content Include="css\css\addons\directives.min.css.map" />
+    <Content Include="css\css\addons\flag.min.css.map" />
+    <Content Include="css\css\addons\jquery.zmd.hierarchical-display.min.css.map" />
+    <Content Include="css\css\addons\rating.min.css.map" />
+    <Content Include="css\css\mdb.lite.min.css.map" />
+    <Content Include="css\css\mdb.min.css.map" />
+    <Content Include="css\css\modules\animations-extended.min.css.map" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Vendor\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Vendor\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Vendor\jquery.min.map" />
+    <Content Include="Vendor\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Vendor\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Vendor\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53395</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44373/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseAjaxifiedTemplates="False" UseJQuerySupport="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
